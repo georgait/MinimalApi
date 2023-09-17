@@ -1,0 +1,14 @@
+{
+    "$schema": "https://json.schemastore.org/template",
+    "author": "Georgios Gaitantzis",
+    "classifications": [ "Web", "Minimal API" ],
+    "identity": "WebApi",
+    "name": "minimal api",
+    "shortName": "minimal-api",
+    "sourceName": "WebApi",
+    "tags": {
+        "language": "C#",
+        "type": "project"
+    },
+    "preferNameDirectory": false
+}

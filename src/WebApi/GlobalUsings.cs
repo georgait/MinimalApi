@@ -1,0 +1,17 @@
+﻿global using WebApi.Extensions.Hosting;
+global using WebApi.Core;
+global using Microsoft.AspNetCore.Mvc;
+global using Microsoft.OpenApi.Models;
+global using WebApi.Endpoints.Todos.DTOs;
+global using WebApi.Endpoints.Todos.Constants;
+global using FluentValidation;
+global using System.Threading.RateLimiting;
+global using WebApi.Constants;
+global using WebApi.Endpoints.Summaries;
+global using Microsoft.AspNetCore.Http.HttpResults;
+global using WebApi.Filters;
+global using Microsoft.IdentityModel.Tokens;
+global using WebApi.Endpoints.Todo.DTOs;
+global using Microsoft.AspNetCore.Diagnostics;
+global using System.Text.Json;
+global using WebApi.Models;
