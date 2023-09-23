@@ -1,11 +1,15 @@
-﻿namespace WebApi.Endpoints.Todos;
+﻿using WebApi.Config.Summaries;
+
+namespace WebApi.Endpoints.Todos;
 
 public class GetAllTodosEndpoint : IEndpoint
 {
+    const string EndpointName = "Get all todos";
+
     public void MapEndpoint(IEndpointRouteBuilder route)
     {
-        route.MapGet(RouteConstants.GetTodos, Handle)
-            .WithName(EndpointName.GetTodos)
+        route.MapGet(Routes.GetTodos, Handle)
+            .WithName(EndpointName)
             .WithOpenApi(TodoSummaries.GetTodosSummary);
     }
 

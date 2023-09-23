@@ -1,4 +1,4 @@
-﻿namespace WebApi.Endpoints.Summaries;
+﻿namespace WebApi.Config.Summaries;
 
 public static class TodoSummaries
 {
@@ -57,7 +57,7 @@ public static class TodoSummaries
         {
             Tags = new List<OpenApiTag> { new() { Name = "TODOs" } },
             Summary = "Get todo by id",
-            Description = "Get todo by id"         
+            Description = "Get todo by id"
         };
     }
 
@@ -67,7 +67,7 @@ public static class TodoSummaries
         {
             Tags = new List<OpenApiTag> { new() { Name = "TODOs" } },
             Summary = "Get all todos",
-            Description = "Get all todos"           
+            Description = "Get all todos"
         };
     }
 }

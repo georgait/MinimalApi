@@ -1,11 +1,15 @@
-﻿namespace WebApi.Endpoints.Todos;
+﻿using WebApi.Config.Summaries;
+
+namespace WebApi.Endpoints.Todos;
 
 public class CreateTodoEndpoint : IEndpoint
 {
+    const string EndpointName = "Create todo";
+
     public void MapEndpoint(IEndpointRouteBuilder route)
     {
-        route.MapPost(RouteConstants.CreateTodo, Handle)
-            .WithName(EndpointName.CreateTodo)
+        route.MapPost(Routes.CreateTodo, Handle)
+            .WithName(EndpointName)
             .WithOpenApi(TodoSummaries.CreateTodoSummary)
             .AddEndpointFilter<ValidationFilter<CreateTodoDto>>();
     }
